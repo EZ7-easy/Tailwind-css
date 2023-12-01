@@ -1,5 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6,thumbnailShoe1, thumbnailShoe2, thumbnailShoe3, people1, people2, people3 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -31,24 +31,19 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        imgURL: people1,
+        name: "Financial Investment",
+        price: "Sep 2022",
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: people2,
+        name: "Marketing Strategy",
+        price: "Sep 2022",
     },
     {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
-    },
-    {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: people3,
+        name: "Business Consulting",
+        price: "Sep 2022",
     },
 ];
 
