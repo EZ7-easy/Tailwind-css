@@ -1,34 +1,60 @@
-import { headerLogo, mainlogo } from '../assets/images'
-import { hamburger } from '../assets/icons'
-import {navLinks} from '../constants/index1'
-function Nav() {
-  return (
-      <section className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0'>
-          <img src={mainlogo} className="w-180px h-[130px]" alt="Flowbite Logo"/>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#" className='text-lg'>Teams</a>
-            </li>
-            <li>
-              <a href="#" className='text-lg'>Prices</a>
-            </li>
-            <li>
-              <a href="#" className='text-lg'>Contact Us</a>
-            </li>
-            <li>
-              <a href="#" className='border-0 bg-[#6B77E5] p-4 ml-6'>Get Consulting</a>
-            </li>
-          </ul>
+import { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { mainlogo } from '../assets/images/index.js'
+
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+  return(
+      <div className="flex items-center w-[100%] gap-[70px] h-[120px]">
+        <img src={mainlogo} className="w-[250px] h-[200px] mt-8 ml-[-20px] md:ml-[5%] md:mr-[20%] " alt=""/>
+        <ul className="flex items-center gap-[5%] hidden md:flex">
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-100">
+            <a className="text-xl" href="#">Home</a>
+          </li>
+          <li className="w-[200px] hover:text-[#2C679E] hover:ease-in hover:duration-100">
+            <a className="text-xl" href="#">About Us</a>
+          </li>
+
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-100">
+            <a className="text-xl" href="#">Teams</a>
+          </li>
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-100">
+            <a className="text-xl" href="#">Prices</a>
+          </li>
+          <li className="w-[200px] hover:text-[#2C679E] hover:ease-in hover:duration-100">
+            <a className="text-xl" href="#">Contact Us</a>
+          </li>
+          <form className="">
+            <button className="bg-[#2C679E] text-white px-7 py-2 hover:bg-white hover:text-[#2C679E] hover:border-[3px] hover:border-[#2C679E] focus:outline-none focus:ring focus:ring-[#2C679E]-300 " type="submit">Get Consulting</button>
+          </form>
+        </ul>
+        <div onClick={handleNav} className='block md:hidden'>
+          {nav ? <AiOutlineClose size={30} className='text-black'/> : <AiOutlineMenu size={30} className='text-black ms-[20%]'/>}
         </div>
-      </section>
+        <ul className={nav ? 'z-10 fixed left-0 top-0 w-[60%] h-full fill-[rgba(255,255,255,0.91)] backdrop-blur-[9.5px] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+          <img src={mainlogo} className="w-[400px] h-[200px] mt-8" alt=""/>
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-200 hover:ml-[30px] ml-[10px]">
+            <a className="text-2xl" href="#">Home</a>
+          </li>
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-200 hover:ml-[30px] ml-[10px]">
+            <a className="text-2xl" href="#">About Us</a>
+          </li>
+
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-200 hover:ml-[30px] ml-[10px]">
+            <a className="text-2xl" href="#">Teams</a>
+          </li>
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-200 hover:ml-[30px] ml-[10px]">
+            <a className="text-2xl" href="#">Prices</a>
+          </li>
+          <li className="hover:text-[#2C679E] hover:ease-in hover:duration-200 hover:ml-[30px] ml-[10px]">
+            <a className="text-2xl" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
   )
 }
-
-export default Nav
+export default Navbar;

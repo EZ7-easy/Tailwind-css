@@ -13,6 +13,9 @@ import image1 from './image1.png'
 import bigboy from './bigboy.png'
 import background from './background.png'
 import offer from './offer.svg'
+import people4 from './people4.png'
+import people5 from './people5.png'
+import people6 from './people6.png'
 
 import phone from './phone.png'
 import mail from './mail.png'
@@ -42,6 +45,9 @@ export {
     headerLogo,
     people3,
     loc,
+    people4,
+    people5,
+    people6,
     phone,
     mail,
     offer,

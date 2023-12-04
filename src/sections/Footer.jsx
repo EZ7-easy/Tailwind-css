@@ -1,77 +1,76 @@
-import { copyrightSign } from "../assets/icons";
-import {footerLogo, loc, mail, mainlogo, phone} from "../assets/images";
-import { footerLinks, socialMedia } from "../constants/index1";
+import {loc, mail, mainlogo, phone} from "../assets/images";
 import { FaInstagram, FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa'
 
 const Footer = () => {
     return (
         <section className='bg-[#37393F]'>
             <div className='text-white'>
-                <div className="w-full max-w-screen-xl mx-auto p-4 md:py-4">
-                    <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                        <img src={mainlogo} className="w-[180px] h-[130px]" alt="Flowbite Logo" />
-                        <ul className="flex flex-wrap text-white items-center mb-6 text-sm font-medium sm:mb-0 dark:text-gray-400">
-                            <li className='ml-10'>
+                <div className="w-full max-w-screen-xl mx-auto p-4 ">
+                    <div className="w-full mx-auto max-w-screen-xl  md:flex md:items-center md:justify-between">
+                        <img src={mainlogo} className="w-[260px] h-[160px]" alt="Flowbite Logo" />
+                        <ul className="flex flex-wrap text-white items-center  text-sm font-medium sm:mb-0 dark:text-gray-400">
+                            <li className='ml-10 inline-flex '>
                                 <img src={phone} alt='phone'/>
-                                <a href='/' className='text-lg'>Call us</a> <br/>
-                                <span>+01 569 896 654</span>
+                                <a href='/' className='text-lg mt-3 ml-2'>Call us <br/> <span>+01 569 896 654</span></a>
                             </li>
-                            <li className='ml-10'>
+                            <li className='ml-10 inline-flex '>
                                 <img src={mail} alt='mail'/>
-                                <a href='/' className='text-lg'>Mail us</a> <br/>
-                                Info@Example.com
+                                <a href='/' className='text-lg mt-3 ml-2'>Mail us <br/>
+                                <span className='text-md'>Info@Example.com</span></a> <br/>
+
                             </li>
-                            <li className='ml-10'>
+                            <li className='ml-10 inline-flex '>
                                 <img src={loc} alt='location'/>
-                                <a href='/' className='text-lg'>Location</a> <br/>
-                                Amsterdam, 109-74
+                                <a href='/' className='text-lg mt-3 ml-2'>Location <br/> <span>Amsterdam, 109-74</span></a>
                             </li>
                         </ul>
                     </div>
-                    <hr className="border-[#6C6D72] sm:mx-auto dark:border-[#6C6D72] lg:my-8" />
+                    <hr className="border-[#6C6D72] sm:mx-auto dark:border-[#6C6D72] lg:my-5" />
                     <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                        <span className='text-2xl text-[#40DDB6]'><strong>Quick Link</strong></span>
                         <div>
-                            <ul className="flex flex-wrap text-white items-center mb-6 text-md font-medium sm:mb-0 dark:text-gray-400">
-                                <li className='ml-10'>
+                            <ul className="flex flex-wrap text-white text-lg font-medium xl:space-x-[170px] lg:space-x-[170px] md:space-x-[120px]">
+                                <li>
                                     <span>Home</span>
                                 </li>
-                                <li className='ml-10'>
+                                <li className='ml-6'>
                                     <span>About Us</span>
                                 </li>
-                                <li className='ml-10'>
+                                <li className='ml-6'>
                                     <span>Teams</span>
                                 </li>
-                                <li className='ml-10'>
+                                <li className='ml-6'>
                                     <span>Prices</span>
                                 </li>
-                                <li className='ml-10'>
+                                <li className='ml-6'>
                                     <span>Contact Us</span>
+                                </li>
+                                <li className='ml-6'>
+                                    <span>FAQ</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <hr className="border-[#6C6D72] sm:mx-auto dark:border-[#6C6D72] lg:my-8" />
+                    <hr className="border-[#6C6D72] sm:mx-auto dark:border-[#6C6D72] lg:mt-3" />
                 </div>
             </div>
-            <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <div className="w-full mx-auto max-w-screen-xl pe-4 pb-6 md:flex md:items-center md:justify-between">
       <span className="text-md text-white sm:text-center dark:text-white">Copyright © <a href='/' className='text-[#40DDB6]'>WhiteCollar</a> | Designed by <a href='/' className='text-[#6B77E5]'>VictorFlow</a> Templates - Powered by Webflow
     </span>
-                <ul className="text-white flex flex-wrap  mt-3 text-md font-medium dark:text-gray-400 sm:mt-0">
+                <ul className="text-white inline-flex">
                     <li>
-                        <a href="#" className="hover:underline  md:me-6">Follow: </a>
+                        Follow:
                     </li>
                     <li>
-                        <a href="#" className="hover:underline  md:me-6"><FaInstagram/></a>
+                        <FaInstagram className='ml-4'/>
                     </li>
                     <li>
-                        <a href="#" className="hover:underline  md:me-6"><FaFacebook/></a>
+                        <FaFacebook className='ml-2'/>
                     </li>
                     <li>
-                        <a href="#" className="hover:underline  md:me-6"><FaTwitter/></a>
+                        <FaTwitter className='ml-2'/>
                     </li>
                     <li>
-                        <a href="#" className="hover:underline  md:me-6"><FaPinterest/></a>
+                        <FaPinterest className='ml-2'/>
                     </li>
                 </ul>
             </div>
