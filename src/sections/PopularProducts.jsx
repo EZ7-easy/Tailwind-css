@@ -17,7 +17,7 @@ function PopularProducts() {
             <p className="text-[#37393F] text-xl font-montserrat">
                 <strong>Financial Investment</strong><br/>
             </p>
-            <p className="text-[#7D7D7D] text-lg font-serif inline-flex gap-2">
+            <p className="text-blue-900 text-lg font-serif inline-flex gap-2">
                 <FaCalendar/>Sep 2022
             </p>
         </div>
@@ -25,7 +25,7 @@ function PopularProducts() {
             <p className="text-[#37393F] text-xl font-montserrat">
                 <strong>Marketing Strategy</strong><br/>
             </p>
-            <p className="text-[#7D7D7D] text-lg inline-flex gap-2 font-serif">
+            <p className="text-blue-900 text-lg inline-flex gap-2 font-serif">
                 <FaCalendar/>Sep 2022
             </p>
         </div>
@@ -33,7 +33,7 @@ function PopularProducts() {
             <p className="text-[#37393F] text-xl font-montserrat">
                 <strong>Business Consulting</strong><br/>
             </p>
-            <p className="text-[#7D7D7D] text-lg font-serif inline-flex gap-2">
+            <p className="text-blue-900 text-lg font-serif inline-flex gap-2">
                 <FaCalendar/>Sep 2022
             </p>
         </div>
@@ -44,7 +44,7 @@ function PopularProducts() {
                 <p className="text-[#37393F] text-xl font-montserrat">
                     <strong>Financial Investment</strong><br/>
                 </p>
-                <p className="text-[#7D7D7D] text-lg font-serif inline-flex gap-2">
+                <p className="text-blue-900 text-lg font-serif inline-flex gap-2">
                     <FaCalendar/>Sep 2022
                 </p>
             </div>
@@ -52,7 +52,7 @@ function PopularProducts() {
                 <p className="text-[#37393F] text-xl font-montserrat">
                     <strong>Web Development</strong><br/>
                 </p>
-                <p className="text-[#7D7D7D] text-lg font-serif inline-flex gap-2">
+                <p className="text-blue-900 text-lg font-serif inline-flex gap-2">
                     <FaCalendar/>Sep 2022
                 </p>
             </div>
@@ -60,7 +60,7 @@ function PopularProducts() {
                 <p className="text-[#37393F] text-xl font-montserrat">
                     <strong>Financial Investment</strong><br/>
                 </p>
-                <p className="text-[#7D7D7D] text-lg font-serif inline-flex gap-2">
+                <p className="text-blue-900 text-lg font-serif inline-flex gap-2">
                     <FaCalendar/>Sep 2022
                 </p>
             </div>

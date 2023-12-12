@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='text-white'>
                 <div className="w-full max-w-screen-xl mx-auto p-4 ">
                     <div className="w-full mx-auto max-w-screen-xl  md:flex md:items-center md:justify-between">
-                        <img src={mainlogo} className="w-[260px] h-[160px]" alt="Flowbite Logo" />
+                        <img src={mainlogo} className="w-[180px] h-[90px]" alt="Flowbite Logo" />
                         <ul className="flex flex-wrap text-white items-center  text-sm font-medium sm:mb-0 dark:text-gray-400">
                             <li className='ml-10 inline-flex '>
                                 <img src={phone} alt='phone'/>
@@ -16,7 +16,7 @@ const Footer = () => {
                             <li className='ml-10 inline-flex '>
                                 <img src={mail} alt='mail'/>
                                 <a href='/' className='text-lg mt-3 ml-2'>Mail us <br/>
-                                <span className='text-md'>Info@Example.com</span></a> <br/>
+                                    <span className='text-md'>Info@Example.com</span></a> <br/>
 
                             </li>
                             <li className='ml-10 inline-flex '>
@@ -28,23 +28,23 @@ const Footer = () => {
                     <hr className="border-[#6C6D72] sm:mx-auto dark:border-[#6C6D72] lg:my-5" />
                     <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                         <div>
-                            <ul className="flex flex-wrap text-white text-lg font-medium xl:space-x-[170px] lg:space-x-[170px] md:space-x-[120px]">
+                            <ul className="flex flex-wrap text-center items-center  text-white gap-[110px] xl:gap-[160px] max-lg:gap-[70px] max-md:gap-[50px] text-lg font-medium max-sm:flex-col max-sm:gap-0">
                                 <li>
                                     <span>Home</span>
                                 </li>
-                                <li className='ml-6'>
+                                <li>
                                     <span>About Us</span>
                                 </li>
-                                <li className='ml-6'>
+                                <li>
                                     <span>Teams</span>
                                 </li>
-                                <li className='ml-6'>
+                                <li>
                                     <span>Prices</span>
                                 </li>
-                                <li className='ml-6'>
+                                <li>
                                     <span>Contact Us</span>
                                 </li>
-                                <li className='ml-6'>
+                                <li>
                                     <span>FAQ</span>
                                 </li>
                             </ul>
@@ -54,10 +54,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className="w-full mx-auto max-w-screen-xl pe-4 pb-6 md:flex md:items-center md:justify-between">
-      <span className="text-md text-white sm:text-center dark:text-white">Copyright © <a href='/' className='text-[#40DDB6]'>WhiteCollar</a> | Designed by <a href='/' className='text-[#6B77E5]'>VictorFlow</a> Templates - Powered by Webflow
-    </span>
+                <span className="text-md text-white sm:text-center dark:text-white ml-3">Copyright © <a href='/' className='text-[#40DDB6]'>WhiteCollar</a></span>
                 <ul className="text-white inline-flex">
-                    <li>
+                    <li className="ml-3">
                         Follow:
                     </li>
                     <li>
@@ -73,9 +72,9 @@ const Footer = () => {
                         <FaPinterest className='ml-2'/>
                     </li>
                 </ul>
-            </div>
-        </section>
-    );
-};
+        </div>
+    </section>
+    )
+}
 
-export default Footer;
+export default Footer
